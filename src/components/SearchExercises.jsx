@@ -61,6 +61,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         // border="1px solid green"
         display="flex"
         alignItems="center"
+        marginBottom="20px"
         // height="70px"
       >
         <TextField
@@ -106,6 +107,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           width: "100%",
           p: "20px",
           border: "1px solid green",
+          overflowX: "scroll",
         }}
       >
         <HorizontalScrollbar
