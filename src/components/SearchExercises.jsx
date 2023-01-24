@@ -13,7 +13,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         `https://exercisedb.p.rapidapi.com/exercises/bodyPartList`
       );
       setBodyParts(["all", ...bodyPartsData]);
-      console.log(bodyParts);
+      // console.log(bodyParts);
     };
     fetchExercisesData();
   }, []);
