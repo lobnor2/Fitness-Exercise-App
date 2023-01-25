@@ -6,6 +6,7 @@ import { fetchData } from "../utils/fetchData";
 import ExerciseCard from "./ExerciseCard";
 
 const Exercises = ({ setExercises, bodyPart, exercises }) => {
+  console.log(exercises);
   return (
     <Box id="exercises" sx={{ mt: { lg: "110px" } }} mt="50px" p="20px">
       <Typography variant="h3" mb="46px">
@@ -18,7 +19,7 @@ const Exercises = ({ setExercises, bodyPart, exercises }) => {
         justifyContent="center"
       >
         {exercises.map((exercise, index) => (
-          <ExerciseCard exercise={exercise} key={index} />
+          <ExerciseCard key={index} exercise={exercise} />
         ))}
       </Stack>
     </Box>
